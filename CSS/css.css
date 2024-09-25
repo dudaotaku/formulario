@@ -1,0 +1,6 @@
+*{ border: 1px solid black;}
+h1{ color:rgb(3, 2, 0)}
+div{border: 1px dotted rgb(221, 124, 140)}
+#box1{background-color: rgb(165, 190, 236);}
+.churrasco{ background-color: rgb(156, 186, 241);}
+h1,p,em,div,.churrasco{ background-color: antiquewhite;}
