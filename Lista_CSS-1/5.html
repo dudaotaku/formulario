@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;} 
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}    
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi</li>
+   <!--item 2--> <li           class="fruta">Melão</li>
+   <!--item 3--> <li id="lip2" class="fruta">Pera</li>
+   <!--item 4--> <li id="lip3" class="fruta">Uva</li>
+   <!--item 5--> <li id="lip4" class="fruta">Maçã</li>
+   <!--item 6--> <li           class="churras">Carne</li>
+   <!--item 7--> <li           class="churras">Linguiça</li>
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+   </ol>   
+
+   <p>
+    regra 1 funciona, seleciona o item 1.<br>
+    regra 2 nao seleciona nenhuma. <br>
+    regra 3 funciona, ele seleciona o item 2 e 5 é mais especifico que a regra li.<br>
+    regra 4 funciona, seleciona o item 6 e 7 mais especifico que a regra churras. <br>
+    regra 5 funciona, seleciona 8, draggable e mais especifico que a regra .churras.<br>
+    regra 6 funciona, seleciona somente o item 3 pois o #lip1 nao existe e o #lip3 é mais especifico.<br>
+    regra 7 funciona, seleciona item 4 pois é mais especifico que a regra 6.<br>
+    regra 8 nao funciona pois nao existe #lip5.<br>
+    </p>
+</body>
+</html>
