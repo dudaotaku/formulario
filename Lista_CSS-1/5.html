@@ -10,6 +10,16 @@
       /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
       /*regra 7*/ #lip3.fruta{color:orange}
       /*regra 8*/ ol>li.churras#lip5{color:purple}
+
+    /* regra 1 funciona, seleciona o item 1. */
+    /* regra 2 nao seleciona nenhuma. */
+    /* regra 3 funciona, ele seleciona o item 2 e 5 é mais especifico que a regra li. */
+    /* regra 4 funciona, seleciona o item 6 e 7 mais especifico que a regra churras. */
+    /* regra 5 funciona, seleciona 8, draggable e mais especifico que a regra .churras.*/
+    /* regra 6 funciona, seleciona somente o item 3 pois o #lip1 nao existe e o #lip3 é mais especifico.*/
+    /* regra 7 funciona, seleciona item 4 pois é mais especifico que a regra 6.*/
+    /* regra 8 nao funciona pois nao existe #lip5.<br> */
+    
    </style>
 </head>
 <body>   
@@ -23,16 +33,5 @@
    <!--item 7--> <li           class="churras">Linguiça</li>
    <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
    </ol>   
-
-   <p>
-    regra 1 funciona, seleciona o item 1.<br>
-    regra 2 nao seleciona nenhuma. <br>
-    regra 3 funciona, ele seleciona o item 2 e 5 é mais especifico que a regra li.<br>
-    regra 4 funciona, seleciona o item 6 e 7 mais especifico que a regra churras. <br>
-    regra 5 funciona, seleciona 8, draggable e mais especifico que a regra .churras.<br>
-    regra 6 funciona, seleciona somente o item 3 pois o #lip1 nao existe e o #lip3 é mais especifico.<br>
-    regra 7 funciona, seleciona item 4 pois é mais especifico que a regra 6.<br>
-    regra 8 nao funciona pois nao existe #lip5.<br>
-    </p>
 </body>
 </html>
