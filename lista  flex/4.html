@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   
+        *{border: 1px solid black;}
+        span{
+            display:inline-block;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(102, 210, 224);
+            border-radius: 50%;
+            margin:10px;
+        }
+        .container{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "nav cabecalho cabecalho"
+        "nav conteudo conteudo"
+        "nav rodape rodape "
+         ;
+         grid-template-rows: 10svh 10svh 40svh 10svh;
+        }
+         
+         .header{
+            grid-area: header;
+            display: flex;
+            align-items: center ;
+
+         }
+         .navegacao{
+            grid-area: nav;
+           
+         }
+         .cabecalho{
+            grid-area: cabecalho;
+         }
+         .conteudo{
+            grid-area: conteudo;
+         }
+         .rodape{
+            grid-area: rodape;
+         }
+
+    .header{
+        background-color: black;
+    }
+    .cabecalho{
+        background-color: rgb(23, 150, 230);
+    }
+    .rodape{
+        background-color: rgb(23, 150, 230);
+    }
+    .conteudo{
+        background-color: blueviolet;
+    }
+    .navegacao{
+        background-color: orange;
+    }
+ 
+
+
+
+
+</style>
+</head>
+<body class="container">
+    <div class="header">header
+
+        <span></span><span></span><span></span>
+    </div>
+    <div class="navegacao">navegacao</div>
+    <div class="cabecalho">cabecalho</div>
+    <div class="conteudo">conteudo</div>
+    <div class="rodape">rodape</div>
+</body>
+</html>
