@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:grid;
+            grid-template-areas: 
+            "HEAD  HEAD  HEAD"
+            "HEAD banner banner "
+            "Menu  Main  aside"
+            "footer  footer footer"
+            ;
+
+        }
+        @media(max-width: 500px) or (max-height: 500px){
+          body{  
+             display:grid;
+             grid-template-areas: 
+             "HEAD "
+             "banner "
+             "."
+             "Menu"
+             "Main" 
+             "aside"
+             "footer"
+             ;
+            
+            }
+
+        }
+        .d1{
+            grid-area:HEAD;
+            text-align: center;
+            background-color: yellow;
+            height: 200px;
+        }
+        .d2{
+            grid-area: banner;
+            background-color: red;
+            height: 100px;
+        }
+        .d3{
+            grid-area: Menu;
+            background-color: green;
+            height: 200px;
+        }
+        .d4{
+            grid-area: Main;
+            background-color: aqua;
+            height: 200px;
+        }
+        .d5{
+            grid-area: aside;
+            background-color: coral;
+            height: 200px;
+        }
+        .d6{
+            grid-area: footer;
+            background-color: grey;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">HEAD</div>
+    <div class="d2">banner</div>
+    <div class="d3">Menu</div>
+    <div class="d4">Main</div>
+    <div class="d5">aside</div>
+    <div class="d6">footer</div>
+
+</body>
+</html>
