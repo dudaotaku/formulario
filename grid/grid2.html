@@ -8,8 +8,8 @@
         body{
             display:grid;
             grid-template-areas: 
-            "HEAD  HEAD  HEAD"
-            "HEAD banner banner "
+            "HEAD  HEAD  ."
+            "banner banner banner "
             "Menu  Main  aside"
             "footer  footer footer"
             ;
@@ -34,32 +34,32 @@
         .d1{
             grid-area:HEAD;
             text-align: center;
-            background-color: yellow;
+            background-color: wheat;
             height: 200px;
         }
         .d2{
             grid-area: banner;
-            background-color: red;
+            background-color: rgb(238, 182, 182);
             height: 100px;
         }
         .d3{
             grid-area: Menu;
-            background-color: green;
+            background-color: rgb(209, 247, 209);
             height: 200px;
         }
         .d4{
             grid-area: Main;
-            background-color: aqua;
+            background-color: rgb(224, 250, 250);
             height: 200px;
         }
         .d5{
             grid-area: aside;
-            background-color: coral;
+            background-color: rgb(240, 196, 180);
             height: 200px;
         }
         .d6{
             grid-area: footer;
-            background-color: grey;
+            background-color: rgb(218, 217, 217);
             height: 200px;
         }
     </style>
