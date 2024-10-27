@@ -1,31 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p {
+            /*nome*/
+            color: darkslateblue;
+        }
+
+        .box {
+            /*class*/
+            display: block;
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: blanchedalmond;
+            color: black;
+
+        }
+
+        #box1 {
+            /*id*/
+
+            color: aquamarine;
+            background-color: antiquewhite;
+
+        }
+
+        /*seletor universal*/
+        * {
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            /*agrupamneto*/
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        div {
+            /*elemento*/
+            font-size: 25px;
+        }
+
+        div p {
+            /*combinador descendente*/
+            background-color: cadetblue;
+        }
+
+        div>p {
+            /*combinador filhos*/
+            color: brown;
+        }
+
+        div+p {
+            /*combinador de irmaos*/
+            font-size: 250px;
+        }
+
+        div~p {
+            /*subsequente*/
+            color: aquamarine;
+
+        }
+
+        input[type="text"] {
+            background-color: yellow;
+        }
+    </style>
 </head>
+
 <body>
 
-<p> Seletores CSS são padrões que identificam quais elementos HTML devem ser estilizados. Os principais tipos incluem:</p>
+    <p> Seletores CSS são padrões que identificam quais elementos HTML devem ser estilizados. Os principais tipos
+        incluem:</p>
 
 
-    <ul>
-     <li> Seletores de Tipo (Tag): Seleciona todos os elementos que correspondem a uma determinada tag HTML. Exemplo: p { color: red; }.</li>
-     <li>  Seletores de Classe: Utilizados para selecionar elementos com uma classe específica. Exemplo: .minha-classe { font-size: 16px; }.</li>
-     <li> Seletores de ID: Seleciona um elemento com um ID específico. Exemplo: #meu-id { border: 1px solid black; }.</li>
-     <li>  Seletores de Atributo: Selecionam elementos com base em seus atributos. Exemplo: input[type="text"] { width: 100%; }</li>.
-     <li> Seletores Descendentes: Seleciona todos os elementos que são descendentes de um elemento específico. Exemplo: div p { color: green; }.</li>
-     <li>  Seletores Filhos: Seleciona todos os elementos que são filhos diretos de um elemento específico. Exemplo: div > p { color: blue; }.</li>
-     <li> Seletores Irmãos Adjacentes: Seleciona o próximo elemento irmão de um elemento específico. Exemplo: h2 + p { margin-top: 0; }.</li>
-     <li> Seletores Irmãos Gerais: Seleciona todos os elementos irmãos de um elemento específico. Exemplo: h2 ~ p { margin-top: 0; }.</li>
-     <li> Seletores de Pseudo-classes: Permitem estilizar elementos em um estado particular, como hover ou focus. Exemplo: a:hover { text-decoration: underline; }.</li>
-     <li> Seletores de Pseudo-elementos: Usados para estilizar partes de um elemento. Exemplo: p::first-letter { font-size: 200%; }.</li>
-     <li> Seletores Universais: Seleciona todos os elementos em um documento. Exemplo: * { margin: 0; padding: 0; }.</li>
-     <li> Seletores de Combinação: Combina diferentes seletores para criar regras mais específicas. Exemplo: p.classe1#id1 { color: red; }</li>
-    </ul>
 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, provident nisi sed id at similique quibusdam
+        <br>
+        fugiat, ipsa? reprehenderit accusamus nihil inventore quasi, quos explicabo magni totam dolore? Libero, ipsum.
+    </p>
 
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores consectetur quaerat laborum, ullam
+            provident illum<BR>
+            dicta modi iure praesentium officiis, neque laboriosam, ab quos tempore dignissimos a est nam?</p>
+    </div>
+
+    <div class="box">
+        hello bitch
+    </div>
+
+    <div class="box" id="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores consectetur quaerat laborum, ullam
+            provident illum<BR>
+            dicta modi iure praesentium officiis, neque laboriosam, ab quos tempore dignissimos a est nam</p>
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, provident nisi sed id at similique
+            quibusdam <br>
+            fugiat, ipsa? reprehenderit accusamus nihil inventore quasi, quos explicabo magni totam dolore? Libero,
+            ipsum.
+        </p>
+    </div>
+
+    <h1>
+        <p>hello bitch
+            hello bitch</p>
+    </h1>
+
+    <h2>
+        <p> blue</p>
+    </h2>
 
 </body>
+
 </html>
