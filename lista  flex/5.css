@@ -1,0 +1,41 @@
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+.imagem1{
+    margin:1%;
+}
+.imagem2{
+    margin:1%;
+}
+.imagem3{
+    margin:1%;
+}
+.imagem4{
+    margin:1%;
+}
+.imagem5{
+    margin:1%;
+}
+
+
+.imagem1:hover{
+    scale: 3.1;
+}
+.imagem2:hover{
+    scale: 3.1;
+}
+.imagem3:hover{
+    scale: 3.1;
+}  
+.imagem4:hover{
+    scale: 3.1;
+}
+.imagem5:hover{
+    scale: 3.1;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
