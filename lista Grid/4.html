@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 20svh 20svh 20svh 20svh;
+            grid-template-areas:
+                "A A . B"
+                "C D D D"
+                "C D D D";
+
+        }
+
+        .a {
+            grid-area: A;
+            background-color: rgb(92, 86, 86);
+            border-radius: 10px;
+            margin: 1%;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .b {
+            grid-area: B;
+            background-color: rgb(92, 86, 86);
+            border-radius: 10px;
+            margin: 1%;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .c {
+            grid-area: C;
+            background-color: rgb(92, 86, 86);
+            border-radius: 10px;
+            margin: 1%;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .d {
+            grid-area: D;
+            background-color: rgb(92, 86, 86);
+            border-radius: 10px;
+            margin: 1%;
+            display: grid;
+            padding: 20px;
+            grid-template-rows: 15svh 15svh;
+            grid-template-areas: 
+            "E F F G"
+            "M I I J";
+        }
+
+        .e {
+            grid-area: E;
+            background-color: rgb(208, 211, 213);
+            margin:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px ;
+
+
+        }
+
+        .f {
+            grid-area: F;
+            background-color: rgb(208, 211, 213);
+            margin:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px ;
+
+        }
+
+        .g {
+            grid-area: G;
+            background-color: rgb(208, 211, 213);
+            margin:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px ;
+
+        }
+
+        .m {
+            grid-area: M;
+            background-color: rgb(208, 211, 213);
+            margin:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px ;
+
+        }
+        
+
+        .i {
+            grid-area: I;
+            background-color: rgb(208, 211, 213);
+            margin:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px ;
+        }
+
+        .j {
+            grid-area: J;
+            background-color: rgb(208, 211, 213);
+            margin:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:10px ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">
+            <div class="e">E</div>
+            <div class="f">F</div>
+            <div class="g">G</div>
+            <div class="m">M</div>
+            <div class="i">I</div>
+            <div class="j">J</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-areas: 
+            "h h h h h"
+            "l b b b r"
+            "l m m m r"
+            "l m m m r"
+            "l m m m r"
+            "l lo lo lo r"
+            "f f f f f"
+            ;
+        }
+        @media screen (width:500px;) or (height:500px;){
+            body{
+                display:grid;
+             grid-template-areas: 
+             "h"
+             "b"
+             "l"
+             "m"
+             "r"
+             "lo"
+             "f"
+             ;
+            }
+        }
+    
+        .d1{
+            grid-area: h;
+            text-align: center;
+            background-color: rgb(252, 186, 6);
+            height: 75px;
+            margin:0.5%;
+            
+
+        }
+        .d2{
+            grid-area: b;
+            text-align: center;
+            background-color: red;
+            height: 50px;
+            margin:0.5%;
+        }
+        .d3{
+            grid-area: l;
+            text-align: center;
+            background-color: green;
+            height: 350px;
+            margin:0.5%;
+
+        }
+        .d4{
+            grid-area: m;
+            text-align: center;
+            background-color: blue;
+            height: 250px;
+            margin:0.5%;
+        }
+        .d5{
+            grid-area: r;
+            text-align: center;
+            background-color: rgb(252, 186, 6);
+            height: 350px;
+            margin:0.5%;
+
+        }
+        .d6{
+            grid-area: lo;
+            text-align: center;
+            background-color: green;
+            height: 50px;
+            margin:0.5%;
+
+        }
+        .d7{
+            grid-area: f;
+            text-align: center;
+            background-color: blue;
+            height: 35px;
+            margin:0.5%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d1">header</div>
+    <div class="d2">banner</div>
+    <div class="d3">left aside</div>
+    <div class="d4">Main content</div>
+    <div class="d5">right aside</div>
+    <div class="d6">low content</div>
+    <div class="d7">footer</div>
+
+</body>
+</html>
