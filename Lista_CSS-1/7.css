@@ -30,7 +30,7 @@
     border-radius: 100%;
     text-align: center;
     outline: 1px solid white;
-    margin: 1%;
+    margin: 10px;
     opacity: 0,5;
     box-shadow: 10px 10px teal
 }

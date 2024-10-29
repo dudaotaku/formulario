@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            text-align: center;
+           align-items: center;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas:
+                "id1"
+                "id2"
+                "id3"
+                "id4"
+                "id5"
+                "id6"
+                "id7"
+                "id8"
+                "id9"
+                "id10";
+            margin:1%;
+
+        }
+
+        #id1 {
+            grid-area: id1;
+            span:first-child{
+                background-color: red;
+            }
+
+         
+        }
+
+        #id2 {
+            grid-area: id2;
+          span:last-child{
+            background-color: green;
+          }
+        }
+        
+
+        #id3 {
+            grid-area: id3;
+            span:nth-child(2){
+                background-color: blue;
+            }
+        }
+
+        #id4 {
+            grid-area: id4;
+            span:nth-child(5){
+                background-color: rgb(243, 126, 190);
+            }
+        }
+
+        #id5 {
+            grid-area: id5;
+            span:nth-child(odd){
+                background-color: yellow;
+            }
+        }
+
+        #id6 {
+            grid-area: id6;
+            span:nth-child(even){
+                background-color: orange;
+            }
+        }
+
+        #id7 {
+            grid-area: id7;
+            span:nth-child(4){
+                background-color: pink;
+            }
+        }
+
+        #id8 {
+            grid-area: id8;
+            span:nth-child(3n+2){
+                background-color: rgb(141, 20, 20);
+
+            }
+        }
+
+        #id9 {
+            grid-area: id9;
+            span:nth-child(3n+1){
+                background-color: gray;
+            }
+        }
+
+        #id10 {
+            grid-area: id10;
+            span:nth-child(n+4):nth-child(-n+6){
+                background-color: purple;
+            }
+        }
+        span{
+            display:inline-block;
+            border: 1px solid black;
+            width: 50px;
+            height:50px;
+            border-radius: 50%;
+            box-shadow: 5px 5px rgb(197, 197, 197);
+            margin: 0.3em;
+            
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="id1">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id2">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id3">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id4">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id5">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id6">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id7">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id8">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id9">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div id="id10">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+    </div>
+</body>
+
+</html>
