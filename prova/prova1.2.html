@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:grid;
+            grid-template-areas: 
+            "HEAD  HEAD  HEAD"
+            "banner banner banner "
+            "Menu  Main  login"
+            "Menu  Main  login"
+            "Menu  Main  login"
+            "produtos produtos produtos"
+            "footer  footer footer"
+            ;
+
+        }
+        
+        .d1{
+            grid-area:HEAD;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            background-color: wheat;
+            height: 75px;
+        }
+        .d2{
+            grid-area: banner;
+            background-color: rgb(238, 182, 182);
+            height: 75px;
+        }
+        .d3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-area: Menu;
+            background-color: rgb(209, 247, 209);
+            height: 300px;
+        }
+        .d4{
+            grid-area: Main;
+            background-color: rgb(224, 250, 250);
+            height: 300px;
+        }
+        .d5{
+            display: flex;
+            flex-direction: column;
+            grid-area: login;
+            background-color: rgb(240, 196, 180);
+            height: 300px;
+        }
+        .d6{
+            grid-area: produtos;
+            background-color: lightblue;
+            height: 50px;
+        }
+        .d7{
+            grid-area: footer;
+            background-color: rgb(218, 217, 217);
+            height: 100px;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        .d4 p{
+            text-align: justify;
+        }
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top:40%;
+            left:44%;
+
+        }
+        .d1 input{
+            display: flex;
+            position: absolute;
+            top:3%;
+            left:45%;
+        }
+        .d1 button{
+            position: absolute;
+            top:3%;
+            left:55%;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <input type="text" placeholder="buscar" >
+        <button>Enviar</button>
+    </div>
+    <div class="d2">Bem Vindo ao site da Empresa XXXX</div>
+    <div class="d3">
+        <p>MENU</p>
+
+
+        <a href="HOME">HOME</a>
+        <a href="SOBRE">SOBRE</a>
+        <a href="CONTATO">CONTATO</a>
+    </div>
+    <div class="d4">
+        <h1>LOREM</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eaque nam totam aperiam et. Tenetur cum illo cumque placeat
+             illum tempore facere perspiciatis doloribus omnis, officiis 
+             recusandae. Explicabo aut accusamus exercitationem!</P>
+
+             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque nam totam aperiam et. Tenetur cum illo cumque placeat
+                 illum tempore facere perspiciatis doloribus omnis, officiis 
+                 recusandae. Explicabo aut accusamus exercitationem!</P>
+                 <img src="https://mariananardi.com.br/wp-content/uploads/2018/09/Gato-x-leao.jpg" alt="gato" style="width: 150px; height: 75px;">
+             
+    </div>
+    <div class="d5">
+        login
+        <input type="text" value="email:">
+        
+        </div>
+    <div class="d6">produtos</div>
+    <div class="d7">flooter</div>
+
+</body>
+</html>
