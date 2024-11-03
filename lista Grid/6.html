@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            margin: 3px;
+            flex-wrap: wrap;
+            flex: 1 1 100vw;
+            /*flex grow, shrink and basis*/
+        }
+
+        .header,
+        .nav,
+        .main,
+        .aside,
+        .footer {
+            display: flex;
+        }
+
+        .header {
+            flex: 1 1 100vw;
+            height: 40px;
+            background-color: rgb(155, 89, 182);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header p {
+            color: #eee9f1;
+            font-size: 18.2px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            flex: 1 1 100vw;
+            height: 60px;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: rgb(155, 89, 182);
+
+        }
+        input{
+            width: 200px;
+            height: 20px;
+            background-color: rgb(155, 89, 182);
+            color: rgb(249, 246, 250);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 0;
+        }
+
+        .nav a {
+            margin: 2%;
+            color: #eee9f1;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav p {
+            margin: 1%;
+            color: #eee9f1;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            flex: 20 1 500px;
+            height: calc(100vh - 330px);
+            /*esse calculo é feito pois pois conta com os 100px do header e do footer mais (3*3) * 4 da margem*/
+            justify-content: center;
+            position: absolute;
+            top: 260px;
+            left: 250px;
+        }
+        .main img{
+            width: 1200px; 
+            height: 500px;
+        }
+        
+
+        .aside {
+            flex: 1 1 200px;
+            height: 138px;
+            background-color: rgb(142, 68, 173);
+
+        }
+
+        .aside img {
+            position: absolute;
+            top: 62px;
+            left: 20px;
+            width: 360px; 
+            height: 100px;
+
+
+        }
+
+        .footer {
+            flex: 1 1 100vw;
+            height: 100px;
+        }
+
+        @media only screen and (max-width: 923px) {
+
+            .main {
+                height: calc(100vh - 436px);
+            }
+
+            .aside {
+                flex: 1 1 100vw;
+                height: 100px;
+            }
+            .aside img{
+                width: 260px;
+                height: 60px;
+
+            }
+            .nav{
+                flex-wrap: wrap;
+                height: 120px;
+            }
+            .main{
+                position: absolute;
+                top: 290px;
+                left: 60px;
+            }
+            .main img{
+                width: 500px; 
+                height: 250px;
+            }
+
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p>Da biblioteca virtual para o mundo!</p>
+    </div>
+    <div class="aside">
+
+        <p><img src="https://acdn.mitiendanube.com/stores/001/308/397/themes/common/logo-782516533-1667850574-87023406015e8e254950077f6a1ee2ac1667850574-320-0.webp"
+            alt="editora violeta"></p>
+
+    </div>
+    <div class="nav">
+        <p> < </p>
+                <a href="http://127.0.0.1:5500/lista%20Grid/4.html">Inicio</a>
+                <a href="http://127.0.0.1:5500/lista%20Grid/4.html">Produto</a>
+                <a href="http://127.0.0.1:5500/lista%20Grid/4.html">Próximos lançamentos</a>
+                <a href="http://127.0.0.1:5500/lista%20Grid/4.html">Dúvida Frequentes</a>
+                <a href="http://127.0.0.1:5500/lista%20Grid/4.html">contato</a>
+                <a href="http://127.0.0.1:5500/lista%20Grid/4.html">Politica de Privacidade</a>
+                <p>></p>
+                <input type="text" placeholder="buscar" >
+    </div>
+    <div class="main">
+        <p><img src="https://acdn.mitiendanube.com/stores/001/308/397/themes/cubo/2-slide-1729714530242-1406859702-289058bc1dd5ad24aa77ada7d62c135e1729714533-1920-1920.webp?389746383" alt="></p>
+    </div>
+
+
+    <div class="footer"></div>
+</body>
+
+</html>
