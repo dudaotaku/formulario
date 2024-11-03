@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 1 100vw;
+            /*flex grow, shrink and basis*/
+        }
+
+        .header {
+            display: flex;
+            flex: 1 1 100vw;
+            background-color: rgb(233, 206, 245);
+            height: 30px;
+            border-end-start-radius: 7px;
+            border-end-end-radius: 7px;
+            align-items: center;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            font-family: cursive;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sequencia {
+            white-space: nowrap;
+            display: inline-block;
+            animation: scroll-text 30s linear infinite;
+        }
+
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+        .nav {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            flex: 1 1 100vw;
+            height: 120px;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+            padding: 0 20px;
+        }
+
+        .nav img {
+
+            width: 150px;
+            height: 100px;
+            margin-right: 20%;
+
+        }
+
+        .pesquisa {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .pesquisar input {
+            padding: 10px;
+            border: 1px solid rgb(233, 206, 245);
+            border-radius: 3px;
+            margin-right: 5px;
+
+        }
+
+
+        button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .icones {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .icones img {
+            width: 35px;
+            height: 35px;
+            margin: 0 5px;
+        }
+
+
+        .aside {
+            display: flex;
+            background-color: rgb(233, 206, 245);
+            flex: 1 1 100vw;
+            height: 40px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        .menu {
+            display: flex;
+            flex: 0 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 9px 20px;
+
+
+        }
+
+        .menu a:hover {
+            color: rgb(142, 68, 173);
+        }
+
+
+        .main {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            flex: 20 1 500px;
+            min-height: calc(100vh - 290px);
+            /*esse calculo é feito pois pois conta com os 100px do header e do footer mais (3*3) * 4 da margem*/
+            position: relative;
+            padding-bottom:100px ;
+            overflow: auto;
+            /*permite exceder a pagina*/
+        }
+
+        .principal {
+            display: flex;
+            justify-content: center;
+            width: 1000px;
+            height: 400px;
+
+        }
+
+
+        .footer {
+            display: flex;
+            background-color: rgb(142, 68, 173);
+            flex: 1 1 100vw;
+            width: 100vh;
+            height: 100px;
+            bottom: 0;
+
+        }
+
+        @media only screen and (max-width:923px) {
+            .main {
+                height: calc(100vh - 284px);
+            }
+
+            .aside {
+                flex: 1 1 100vw;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="sequencia">
+            Frete Gratis acima R$250,00 || Cupom de 10% para sua primeira compra "BEMVINDA" || Frete Gratis acima
+            R$250,00 || Cupom de 10% para sua primeira compra "BEMVINDA" || Frete Gratis acima R$250,00 || Cupom de
+            10% para sua primeira compra "BEMVINDA" ||
+        </div>
+        <div class="sequencia">
+            Frete Gratis acima R$250,00 || Cupom de 10% para sua primeira compra "BEMVINDA" || Frete Gratis acima
+            R$250,00 || Cupom de 10% para sua primeira compra "BEMVINDA" || Frete Gratis acima R$250,00 || Cupom de
+            10% para sua primeira compra "BEMVINDA" ||
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <div id="imagem"><a href="http://127.0.0.1:5500/Prova_%20parte%202/prova_parte2.html?#"><img
+                        src="Texto do seu parágrafo (4).png" alt="logotipo"></div></a>
+
+            <form method="get" class="pesquisa">
+                <input type="text" placeholder="O que você procura?" class="pesquisar">
+                <button type="submit" class="pesquisar"><img src="lupa.png" alt="lupa"
+                        style="width: 25px; height: 25px;"></button>
+            </form>
+            <div class="icones">
+                <a href="https://www.grafitte.com.br/carrinho/index"><img src="user.png" alt="login"></a>
+                <a href="#"><img src="carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="menu">
+            <a href="#">Produtos</a>
+            <a href="#">Outlet</a>
+            <a href="#">Novidades</a>
+            <a href="#">Exclusivo</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="principal">
+            <img src="https://i.ytimg.com/vi/YJ4XCUcAdcU/maxresdefault.jpg" alt="loreal">
+        </div>
+       <h1>NOVIDADES</h1>
+    </div>
+    <div class="footer">rodape</div>
+</body>
+
+</html>
