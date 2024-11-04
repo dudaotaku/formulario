@@ -40,15 +40,15 @@ img{
 .nome{
     text-align: left;
 }
-.intercao{
+.interacao{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid gray;
+    border: 0.5px solid gray;
     width: 340px;
     height: 100px;
     border-radius: 8px;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 .interacao button{

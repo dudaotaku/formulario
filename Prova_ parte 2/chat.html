@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>chat</title>
     <style>
         * {
 
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
@@ -148,11 +148,12 @@
             /*esse calculo é feito pois pois conta com os 100px do header e do footer mais (3*3) * 4 da margem*/
             position: relative;
             overflow-x: auto;
-            flex-direction: column;
             /*permite exceder a pagina*/
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10%;
 
         }
-
 
         .principal {
             display: flex;
@@ -165,55 +166,96 @@
 
         #escrita {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            position: absolute;
-            left: 15%;
-            top: 15%;
-
         }
-
-        .botao {
-            margin-bottom: 20%;
-        }
-
 
         .principal p {
             text-align: justify;
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .principal button {
-            background-color: rgb(227, 175, 250);
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
         .container2 {
+            width: 90%;
+            max-width: 350px;
+            border: 2px solid rgb(184, 125, 211);
+            height: 440px;
+            border-radius: 8px;
+            background-color: rgb(255, 255, 255);
             position: absolute;
-            right: 1%;
-            top: 5%;
-            display: flex;
-            flex-direction: column;
+            top: 10%;
+            left: 40%;
+        }
+
+        .recebida {
+            margin: 5px;
+            border-radius: 8px;
+            position: relative;
+            text-align: left;
+            display: block;
+            border: 0.5px solid rgb(234, 210, 245);
+        }
+
+        .enviada {
+            margin: 5px;
+            border-radius: 8px;
+            position: relative;
+            text-align: right;
+            display: block;
+            border: 0.5px solid rgb(234, 210, 245);
             background-color: rgb(234, 210, 245);
-            padding: 15px;
         }
 
-        .botoes {
-            margin-bottom: 20px;
-        }
-
-        .container2 img {
-            border: none;
+        img {
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
         }
 
+        .horario {
+            text-align: right;
+        }
+
+        .nome {
+            text-align: left;
+            margin: 3%;
+        }
+
+        .interacao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 340px;
+            height: 100px;
+            border-radius: 8px;
+            flex-direction: row;
+            position: absolute;
+            top: 80%;
+
+        }
+
+        .interacao button {
+            display: flex;
+            padding: 10px;
+            border-radius: 5px;
+            align-items: flex-end;
+            background-color: rgb(212, 184, 224);
+            border: none;
+        }
+
+        .interacao input {
+            display: flex;
+            flex: 0.75;
+            width: 290px;
+            border: 1px solid rgb(184, 125, 211);
+            font-size: 14px;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5%;
+
+        }
 
         .footer {
             display: flex;
@@ -244,22 +286,45 @@
             }
 
             .container2 {
-                position: absolute;
-                right: 0%;
-                top: 90%;
+                width: 90%;
+                max-width: 350px;
+                border: 2px solid rgb(184, 125, 211);
+                height: 460px;
+                border-radius: 8px;
+                background-color: rgb(255, 255, 255);
                 display: flex;
                 flex-direction: column;
-                background-color: rgb(234, 210, 245);
-                padding: 15px;
-            }
+                position: absolute;
+                top: 80%;
+                left: 8%;
 
-            #escrita {
+            }
+            .interacao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 340px;
+            height: 100px;
+            border-radius: 8px;
+            flex-direction: row;
+            position: absolute;
+            top: 82%;
+
+        }
+
+            .main {
                 display: flex;
+                background-color: rgb(255, 255, 255);
+                flex: 20 1 500px;
+                min-height: calc(100vh - 290px);
+                /*esse calculo é feito pois pois conta com os 100px do header e do footer mais (3*3) * 4 da margem*/
+                position: relative;
+                overflow-x: auto;
+                /*permite exceder a pagina*/
                 flex-direction: column;
-                align-items: center;
-                position: absolute;
-                left: 42%;
-                top: 15%;
+                justify-content: center;
+                margin-left: 10%;
+              
 
             }
         }
@@ -306,38 +371,51 @@
         </div>
     </div>
     <div class="main">
-        <div class="principal">
-            <div id="escrita">
+        <h1>CHAT</h1>
+        <br>
+        <p>Caso ocorra algum problema ou tenha duvida sobre <br>
+            algum produto entre em contato pela chat ao lado!!</p>
 
-                <h1><span>Login</span></h1>
-                <br>
+        <div class="container2">
+            <div class="nome">Cliente</div>
+            <div class="recebida">
 
-                <div classe="botao">
-                    <a href="http://127.0.0.1:5500/Prova_%20parte%202/login.html"><button>Login</button></a>
-                    <br>
-                    <a href="http://127.0.0.1:5500/Prova_%20parte%202/cadastrar.html"><button>Cadastrar</button></a>
+                <div class="masculina">
+                    <div class="enviado">
+                        <p><br>Olá, tudo bem?</p>
+                        <div class="horario">00:50</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="container2">
-                <div class="informacoes">
-                    <p>Informações de contato:</p>
-                    <br>
-                    <p>Email:mariaeduardadasilvapereira2610@gmail.com<br></p>
-                    <br>
-                    <p>WhatsApp:(47) 99626-6458<br></p>
-                    <br>
-                    <p>Endereço: R. Adriano Kormann, 510 - Bela Vista, Gaspar - SC, 89111-009</p>
-                    <br>
+            <div class="nome">Loja</div>
+            <div class="enviada">
+                <div class="enviado">
+                    <p><br>Como posso ajuda-la?</p>
+                    <div class="horario">00:55</div>
                 </div>
-                <div class="botoes">
-                    <a href="http://127.0.0.1:5500/Prova_%20parte%202/chat.html"><button><img src="Logotipo Monograma Elegante Orgânico Preto e Branco (4).png" alt="mensagem"
-                            style="height: 50px; width: 50px;"></button></a>
+            </div>
+
+            <div class="nome">Cliente</div>
+            <div class="recebida">
+                <div class="enviado">
+                    <p>O condicionador da wella é bom para cabelo cacheado?</p>
+                    <div class="horario">01:01</div>
                 </div>
+            </div>
+
+            <div class="nome">Loja</div>
+            <div class="enviada">
+                <p>Sim, ele é ......</p>
+                <div class="horario">00:55</div>
+            </div>
+
+            <div class="interacao">
+                <input placeholder="Digite sua mensagem " type="text">
+                <button>Enviar</button>
 
             </div>
         </div>
-    </div>
     </div>
     <div class="footer">
         <div id="rodape"><img
@@ -347,9 +425,8 @@
 
         <p> "Oportunidades não surgem. É você que as cria" -Chris Grosser, fotógrafo</p>
     </div>
-</body>
 
-</html>
+
 </body>
 
 </html>
