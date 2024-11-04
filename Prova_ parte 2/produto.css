@@ -1,0 +1,343 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    /*flex grow, shrink and basis*/
+}
+
+.header {
+    display: flex;
+    flex: 1 1 100vw;
+    background-color: rgb(233, 206, 245);
+    height: 30px;
+    border-end-start-radius: 7px;
+    border-end-end-radius: 7px;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    overflow: hidden;
+}
+
+.sequencia {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll-text 30s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex: 1 1 100vw;
+    height: 120px;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.nav img {
+
+    width: 150px;
+    height: 100px;
+    margin-right: 20%;
+
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+
+.pesquisar input {
+    padding: 10px;
+    border: 1px solid rgb(233, 206, 245);
+    border-radius: 3px;
+    margin-right: 5px;
+
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icones img {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+}
+
+
+.aside {
+    display: flex;
+    background-color: rgb(233, 206, 245);
+    flex: 1 1 100vw;
+    height: 40px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.menu {
+    display: flex;
+    flex: 0 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+
+
+}
+
+.menu a:hover {
+    color: rgb(142, 68, 173);
+}
+
+
+.main {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex: 20 1 500px;
+    min-height: calc(100vh - 290px);
+    /*esse calculo é feito pois pois conta com os 100px do header e do footer mais (3*3) * 4 da margem*/
+    position: relative;
+    overflow-x: auto;
+    flex-direction: column;
+    /*permite exceder a pagina*/
+
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#escrita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.perfect{
+    display: block;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: start;
+    border: 0.5px solid rgb(233, 206, 245);
+    margin-top: 3%;
+
+}
+
+.perfect button {
+    background-color: rgb(227, 175, 250);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.loreal {
+    display: block;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: start;
+    border: 0.5px solid rgb(233, 206, 245);
+    margin-top: 3%;
+
+}
+
+.loreal button {
+    background-color: rgb(227, 175, 250);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.wella {
+    display: block;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: start;
+    border: 0.5px solid rgb(233, 206, 245);
+    margin-top: 3%;
+
+}
+
+.wella button {
+    background-color: rgb(227, 175, 250);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.oleo_wella{
+    display: block;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: start;
+    border: 0.5px solid rgb(233, 206, 245);
+    margin-top: 3%;
+
+}
+.oleo_wella button {
+    background-color: rgb(227, 175, 250);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.loreal_mascara{
+    display: block;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: start;
+    border: 0.5px solid rgb(233, 206, 245);
+    margin-top: 3%;
+
+}
+.loreal_mascara  button {
+    background-color: rgb(227, 175, 250);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.kerasys{
+    display: block;
+    margin-right: 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: start;
+    border: 0.5px solid rgb(233, 206, 245);
+    margin-top: 3%;
+
+}
+.kerasys button {
+    background-color: rgb(227, 175, 250);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.main a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.footer {
+    display: flex;
+    background-color: rgb(142, 68, 173);
+    flex: 1 1 100vw;
+    height: 100px;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    color: rgb(234, 210, 245);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#rodape img{
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width:923px) {
+    .main {
+        height: calc(100vh - 284px);
+    }
+
+    .aside {
+        flex: 1 1 100vw;
+        height: 40px;
+    }
+}
